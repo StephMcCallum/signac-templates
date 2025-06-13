@@ -236,3 +236,6 @@ def production_run(job):
         sim.save_restart_gsd(job.fn("production-restart.gsd"))
         job.doc.production_runs += 1
         print("Simulation finished.")
+
+if __name__ == "__main__":
+    Ellipsoids(environment=Borah).main()
